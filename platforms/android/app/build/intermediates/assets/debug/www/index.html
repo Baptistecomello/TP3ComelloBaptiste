@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+   <head>
+      <meta charset="utf-8">
+      <tilte></tilte>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebasneueregular" type="text/css"/>
+	  <script type="text/javascript" src="cordova.js"></script>
+	  <script>
+		window.addEventListener("batterystatus", onBatteryStatus, false);
+		function onBatteryStatus(status) {
+			console.log("Level: " + status.level + " isPlugged: " + status.isPlugged);
+			alert("Niveau de batterie " + status.level + " Entrain de charger: " + status.isPlugged);
+		}
+		function checkConnection() {
+			var networkState = navigator.connection.type;
+
+			var states = {};
+			states[Connection.UNKNOWN]  = 'Unknown connection';
+			states[Connection.ETHERNET] = 'Ethernet connection';
+			states[Connection.WIFI]     = 'WiFi connection';
+			states[Connection.CELL_2G]  = 'Cell 2G connection';
+			states[Connection.CELL_3G]  = 'Cell 3G connection';
+			states[Connection.CELL_4G]  = 'Cell 4G connection';
+			states[Connection.CELL]     = 'Cell generic connection';
+			states[Connection.NONE]     = 'No network connection';
+
+			alert('Type de connexion: ' + states[networkState]);
+		}
+		
+
+		
+		
+		document.addEventListener("deviceready", onDeviceReady, false);
+		function onDeviceReady() {
+			checkConnection();
+			console.log(device.model);
+			console.log(device.version);
+			console.log(device.uuid);
+			alert('Le model est' + device.model);
+			alert('La version est' + device.version);
+			alert("L'UUID est " + device.uuid);
+			console.log(navigator.globalization.getPreferredLanguage);
+			alert("La langue est " + navigator.globalization.getPreferredLanguage);
+		}
+		
+	</script>
+	  </head>
+   <body>
+      <div id="header">
+         <img src="img/dofus.png" width="200" alt="Logo du jeu Dofus"/> 
+         <div id="navigations">
+            <ul id="navigation">
+               <li><a href="#" title="accueil">Acceuil</a></li>
+               <li><a id="titreMenu" href="#" title="titre 1">Xélor</a></li>
+               <li><a href="#" title="contact">Contact</a></li>
+            </ul>
+            <input id="recherche" type="search" placeholder="Recherche" name="recherche">
+         </div>
+      </div>
+      <div id="corp">
+	     <a href='contact.html'> Contact </a>
+		
+         <img id="baniere" src="img/baniere.jpeg" alt="Baniere représentant des personnages du jeu Dofus"/>          
+         <h1> Xélor </h1>
+         <p>Les Xélors sont des mages qui maîtrisent le temps et toutes les mécaniques qui donnent l'heure : carillons, horloges et pendules leur obéissent au doigt et à l'œil.
+            Les Xélors jouent donc avec le temps pour ralentir un ennemi ou se téléporter où bon leur semble. 
+         </p>
+      </div>
+      <div id="images">	
+         <ul>
+            <li>
+               <img src="img/1.png" width=100 alt="LOgo du jeu Dofus"/>
+               <h2 id="placement">Placement</h2>
+               <p>Déplace alliés et ennemis en manipulant le temps.</p>
+            </li><li>
+               <img src="img/2.png" width=100 alt="LOgo du jeu Dofus"/>
+               <h2 id="entrave">Entrave</h2>
+               <p>Retire des points d'action.</p>
+            </li><li>
+               <img src="img/3.png" width=100 alt="LOgo du jeu Dofus"/>
+               <h2 id="degats">Dégats</h2>
+               <p>Optimise ses dégats en manipulant le temps.</p>
+            </li><li>
+               <img id="i4" src="img/4.png" width=100 alt="LOgo du jeu Dofus"/>
+               <h2 id="amé">Amélioration</h2>
+               <p>Augmente les points d'action.</p>
+            </li>
+         </ul>
+      </div>
+      <div id="formulaire">
+         <h2>Formulaire</h2>
+         <form>
+            <ul>
+               <li>
+                  <input id="prenom" type="text" name="prénom" placeholder="Prénom"/>
+                  <input id="nom" type="text" name="nom" placeholder="Nom"/>
+               </li>
+               <li>
+                  <input id ="date" type="date" name="date"/>
+                  <input id ="villenaiss" type="text" placeholder="Ville de Naissance"/>
+               <li>
+                  <textarea id="area"></textarea>
+               </li>
+               <li>
+                  <input id="email" type="email" name="mail" placeholder="Adresse email"/>
+               </li>
+               <li>
+                  <input id="envoyer" type="submit" value="Envoyer"/>
+               </li>
+            </ul>
+         </form>
+      </div>
+      <div id="map">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2527.08855094354!2d3.1578698516997643!3d50.69974127941004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c328de10544e45%3A0xb2b01f892ff7a047!2sAnkama!5e0!3m2!1sfr!2sfr!4v1518792929532" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div id="footer">
+         <p>Comello Baptiste TPC</p>
+      </div>
+   </body>

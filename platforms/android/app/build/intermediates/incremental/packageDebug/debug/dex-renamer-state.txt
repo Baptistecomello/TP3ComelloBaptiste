@@ -1,0 +1,19 @@
+#Thu Mar 29 12:55:51 CEST 2018
+renamed.5=classes6.dex
+renamed.4=classes5.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+base.5=C\:\\Users\\Public\\tp3\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\126
+base.4=C\:\\Users\\Public\\tp3\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\130
+base.3=C\:\\Users\\Public\\tp3\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\129
+base.2=C\:\\Users\\Public\\tp3\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\131
+base.1=C\:\\Users\\Public\\tp3\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\127
+base.0=C\:\\Users\\Public\\tp3\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\128
+file.5=C\:\\Users\\Public\\tp3\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\126\\classes.dex
+file.4=C\:\\Users\\Public\\tp3\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\130\\classes.dex
+file.3=C\:\\Users\\Public\\tp3\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\129\\classes.dex
+file.2=C\:\\Users\\Public\\tp3\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\131\\classes.dex
+file.1=C\:\\Users\\Public\\tp3\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\127\\classes.dex
+file.0=C\:\\Users\\Public\\tp3\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\128\\classes.dex

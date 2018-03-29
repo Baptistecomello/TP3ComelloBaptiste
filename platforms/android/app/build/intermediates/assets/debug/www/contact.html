@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+   <head>
+      <meta charset="utf-8">
+      <tilte></tilte>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebasneueregular" type="text/css"/>
+	  <script type="text/javascript" src="cordova.js"></script>
+	  <script>
+	   function onDeviceReady() {
+
+	  	function onSuccess(contacts) {
+			for (var i = 0; i < contacts.length; i++) {
+			
+			
+				document.getElementById('Lespotes').innerHTML += "<p> Nom: " +  contacts[i].displayName + "</p></br>";
+				
+				
+			} 
+		};
+
+		function onError(contactError) {
+			alert('Erreur!');
+		};
+
+		var options = new ContactFindOptions();
+		options.filter = "";
+		options.multiple = true;
+		var filter = ["displayName", "addresses"];
+		navigator.contacts.find(filter, onSuccess, onError, options);
+
+		}	
+
+	  </script>
+	  
+	  </head>
+   <body>
+      <div id="header">
+         <img src="img/dofus.png" width="200" alt="Logo du jeu Dofus"/> 
+         <div id="navigations">
+            <ul id="navigation">
+               <li><a href="#" title="accueil">Acceuil</a></li>
+               <li><a id="titreMenu" href="#" title="titre 1">Xélor</a></li>
+               <li><a href="#" title="contact">Contact</a></li>
+            </ul>
+            <input id="recherche" type="search" placeholder="Recherche" name="recherche">
+         </div>
+      </div>
+	  <div id="corp">
+		<p id="lespotes"></p>
+
+	  </div>
+      <div id="footer">
+         <p>Comello Baptiste TPC</p>
+      </div>
+   </body>
